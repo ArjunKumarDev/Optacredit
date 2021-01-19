@@ -7,10 +7,18 @@
       <h3 class="title-flex-title">Create New</h3>
     </div>
 
-    <div class="title-flex" v-if="windowWidth <= 768" @click="menuToggle">
+    <div class="title-flex" v-if="windowWidth <= 768">
       <h1>Optacredit</h1>
-      <div class="menuToggle" v-if="navVisible === false"></div>
-      <div class="closeMenu" v-if="navVisible === true"></div>
+      <div
+        class="menuToggle"
+        @click="menuToggle"
+        v-if="navVisible === false"
+      ></div>
+      <div
+        class="closeMenu"
+        @click="menuToggle"
+        v-if="navVisible === true"
+      ></div>
     </div>
 
     <div>
